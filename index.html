@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 10px 0;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #000;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Toko Iseng 🛒</h1>
+  <p>Test Integrasi Sociabuzz</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200" alt="Produk 1">
+    <h3>Produk Keren 1</h3>
+    <div class="price">Rp50.000</div>
+    <a href="#" class="btn">Beli</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200" alt="Produk 2">
+    <h3>Produk Keren 2</h3>
+    <div class="price">Rp75.000</div>
+    <a href="#" class="btn">Beli</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200" alt="Produk 3">
+    <h3>Produk Keren 3</h3>
+    <div class="price">Rp100.000</div>
+    <a href="#" class="btn">Beli</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Toko Iseng - Powered by Sociabuzz</p>
+</footer>
+
+<!-- Script Sociabuzz -->
+<script type="text/javascript" src="https://storage.sociabuzz.com/storage/js/main/buttononwebsite/index.min.js"></script>
+<script>
+  sbBoW.draw("ikkonstr","UGF5IEhlcmU","position-bottom-right","#000000","#FFFFFF");
+</script>
+
+</body>
+</html>
